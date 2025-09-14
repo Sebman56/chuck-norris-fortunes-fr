@@ -36,7 +36,7 @@ fn purify_content(content: &str) -> String {
             // vérifier si la ligne contient la cible de fin
             if line.contains(target) {
                 in_section = false;
-                result.push('\n % \n'); // Ajouter un saut de ligne, un "ù", puis un second saut de ligne à la fin de la section
+                result.push('\n % \n'); // Ajouter un saut de ligne, un "%", puis un second saut de ligne à la fin de la section
             }
             // Ignorer le contenu entre # et [+++]
         } else if line.starts_with('#') {
